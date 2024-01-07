@@ -1,0 +1,9 @@
+.adjusted-logo {
+    /* Add any necessary styling to adjust the logo position */
+    margin-top: -50px; /* Example: Increase top margin to move the logo down */
+    margin-left: -40px; /* Example: Increase left margin to move the logo to the right */
+}
+.menu-area{
+    margin-top: -80px; /* Example: Increase top margin to move the logo down */
+    margin-left: -40px; 
+}
