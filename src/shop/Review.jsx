@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Ratting from"..components/Rating.jsx"
+import Ratting from '../components/Ratting';
 const reviwtitle = "Add a Review";
 
 let ReviewList = [ { imgUrl: "/src/assets/images/instructor/01.jpg", imgAlt: "Client thumb", name: "Ganelon Boileau", date: "Posted on Jun 10, 2022 at 6:57 am", desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.", }, { imgUrl: "/src/assets/images/instructor/02.jpg", imgAlt: "Client thumb", name: "Morgana Cailot", date: "Posted on Jun 10, 2022 at 6:57 am", desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.", }, { imgUrl: "/src/assets/images/instructor/03.jpg", imgAlt: "Client thumb", name: "Telford Bois", date: "Posted on Jun 10, 2022 at 6:57 am", desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.", }, { imgUrl: "/src/assets/images/instructor/04.jpg", imgAlt: "Client thumb", name: "Cher Daviau", date: "Posted on Jun 10, 2022 at 6:57 am", desc: "Enthusiast build innovativ initiatives before lonterm high-impact awesome theme seo psd porta monetize covalent leadership after without resource.", }, ];
@@ -82,14 +82,24 @@ Our shop offers an exclusive array of high-quality products meticulously curated
 </div>
 <div className='post-content'>
 <ul className='lab-ul'>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>Engaging posts captivate audiences, sparking interaction.</li>
+<li>Quality content resonates, forging lasting connections.</li>
+<li>Visuals amplify messages, enhancing content impact.</li>
+<li>Consistency breeds familiarity, strengthening brand presence.</li>
+<li>Compelling storytelling inspires, fostering community engagement.</li>
+<li>Effective communication builds trust, fostering strong relationships.</li>
+<li>Continuous learning cultivates expertise, fostering professional growth.</li>
 </ul>
 </div>
 </div>
+<p>Our latest featured item is a versatile must-have designed to elevate your everyday routine. Crafted with precision and innovation, this product embodies functionality and style. Whether you're aiming for a fashion statement or practicality, this item seamlessly blends both worlds. Its sleek design and durability make it suitable for various occasions, promising reliability and endurance. Engineered with the latest technology, it ensures top-notch performance, catering to modern demands. Embrace convenience and sophistication as this item effortlessly complements your lifestyle, offering a perfect balance of utility and elegance. Discover the perfect addition to your collection and redefine your experience with this exceptional piece, delivering unparalleled value and satisfaction.
+
+
+
+
+
+
+</p>
 </div>
        </div>
        </>

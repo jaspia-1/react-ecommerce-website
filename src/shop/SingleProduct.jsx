@@ -25,7 +25,7 @@ fetch("/src/products.json").then(res=>res.json()).then(data=>setProduct(data))
            <div className='shop-single padding-tb aside-bg'>
 <div className='container'>
 <div className='row justify-content-center'>
-    <div className='col-lg-8 col-12'>
+    <div className=''>
         <article>
 <div className="product-details">
     <div className='row align-items-center'>
@@ -85,7 +85,7 @@ className="mySwiper">
         </article>
     </div>
     {/*  right side*/}
-    <div className='col-lg-4 col-12'>Right Side</div>
+    <div className='col-lg-4 col-12'></div>
     </div>
 </div>
     </div>
