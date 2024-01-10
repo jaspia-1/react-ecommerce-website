@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PageHeader from '../components/PageHeader';
 import { Link } from 'react-router-dom';
 import delImgUrl from "../assets/images/shop/del.png"
+import CheckOutPage from './CheckOutPage';
 const CartPage = () => {
     const [cartItems,setcartItems]=useState([]);
     useEffect(()=>{
@@ -112,7 +113,9 @@ placeholder='Coupon code ....'/>
 </form>
 <form className='cart-checkout'>
 <input type='submit' value="Update Cart"/>
-<div>CheckoutPage</div>
+<div>
+    <CheckOutPage></CheckOutPage>
+</div>
 </form>
 </div>
 {/*-------checkot box end ----------- */}
@@ -136,19 +139,42 @@ placeholder='Coupon code ....'/>
 </div>
 <div className='outline-select shiping-select'>
 <select>
-    <option value="uk">United Kingdom (UK)</option>
-    <option value="us">United States</option>
-    <option value="pak">Pakisthan</option>
-    <option value="ind">India</option>
-    <option value="nep">Nepal</option>
+    <option value="uk">Dhaka</option>
+    <option value="us">Chittagong</option>
+    <option value="pak">Noakhali</option>
+    <option value="ind">Barishal</option>
+    <option value="nep">Mymensingh</option>
+    <option value="nep">Dinajpur</option>
+    <option value="nep">Rajshahi</option>
+    <option value="nep">Rongpur</option>
 </select>
 <span className='select-icon'>
 <i className='icofont-rounded-down'></i>
 </span>
 </div>
+<input type='text' name='postalCode' id='postalCode' placeholder='Postcode/ZIP' className='cart-page-input-text'/>
+<button>Update Address</button>
 </div>
 </div>
-<div className='col-md-6 col-12'>Right Side</div>
+<div className='col-md-6 col-12'>
+    <div className='cart-overview'>
+<h3>Cart Totals</h3>
+<ul className='lab-ul'>
+<li>
+    <span className='pull-left'>Cart Subtotal</span>
+    <p className='pull-right'>$ {cartSubTotal}</p>
+</li>
+<li>
+    <span className='pull-left'>Shipping and Handling</span>
+    <p className='pull-right'>Free Shipping</p>
+</li>
+<li>
+    <span className='pull-left'>Order Total</span>
+    <p className='pull-right'>$ {orderTotal.toFixed(2)}</p>
+</li>
+</ul>
+    </div>
+</div>
 </div>
 </div>
         </div>
