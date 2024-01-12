@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import "../components/modal.css"
+import { useLocation, useNavigate } from 'react-router-dom';
 const CheckOutPage = () => {
     const [show,setShow]=useState(false)
     const [activeTab,setActiveTab]=useState("visa")
@@ -11,6 +12,15 @@ const CheckOutPage = () => {
 
     const handleShow=()=>setShow(true);
     const handleClose=()=>setShow(false);
+    // direct to home page
+    const location=useLocation();
+    const navigate=useNavigate();
+    const from=location.state?.from?.pathname || "/";
+    const handleOrderConfirm=()=>{
+        alert("Your Order is placed successfully!")
+        localStorage.removeItem("cart")
+        navigate(from,{replace:true})
+    }
     return (
         <div className='modalCard'>
            <Button variant='primary' className='py-2' onClick={handleShow}> Proceed to Checkout</Button>
@@ -91,7 +101,7 @@ aria-labelledby='visa-tab'
 </div>
 </div>
 <div className='px-5 pay'>
-<button className='btn btn-success btn-block'>Order</button>
+<button className='btn btn-success btn-block onClick={handleOrderConfirm}'>Order Now</button>
 </div>
 
 </div>
@@ -149,7 +159,7 @@ aria-labelledby='paypal-tab'
 </div>
 </div>
 <div className='px-5 pay'>
-<button className='btn btn-success btn-block'>Add Paypal</button>
+<button className='btn btn-success btn-block' onClick={handleOrderConfirm}>Add Paypal</button>
 </div>
 
 </div>
@@ -158,7 +168,7 @@ aria-labelledby='paypal-tab'
 </div>
 </div>
 {/* payment desclaimer */}
-<p></p>
+<p className='mt-3 px- p-Disclaimer'><em>Payment Disclaimer:</em>In no event shall payment or partial payment by owner for any materil or service</p>
 </div>
 </div>
 </div>
