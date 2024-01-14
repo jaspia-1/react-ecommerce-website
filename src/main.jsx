@@ -26,7 +26,11 @@ import SingleBlog from './Blog/SingleBlog.jsx';
 import About from './about/About.jsx';
 import ContactPage from './contactPage/ContactPage.jsx';
 import AuthProvider from './contexts/AuthProvider.jsx';
+import PrivateRoute from './PrivateRoute/PrivateRoute.jsx';
 
+import Contact from'./contactPage/ContactPage.jsx'
+import Login from './shop/Login.jsx';
+import Signup from './components/Signup.jsx';
 
 const router = createBrowserRouter([
   {
@@ -55,7 +59,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/cart-page",
-        element:<CartPage></CartPage>
+        element:<PrivateRoute><CartPage></CartPage></PrivateRoute>
       },
       {
         path:"/about",
@@ -64,10 +68,21 @@ const router = createBrowserRouter([
       ,
       {
         path:"/contact",
-        element:<ContactPage></ContactPage>
-      }
+        element:<Contact/>
+      },
+      {
+        path:"/login",
+        element:<Login></Login>
+      },
+      {
+        path:"/signup",
+        element:<Signup></Signup>
+      },
+      
+      
     ]
-  },
+  }
+ 
   
 ]);
 

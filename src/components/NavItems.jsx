@@ -25,7 +25,7 @@ const NavItems = () => {
                 <div className='container'>
                     <div className='header-top-area'>
                         <Link to='/signup' className='lab-btn me-3'><span>Create Account</span></Link>
-                        <Link to='/login'>Log In</Link>
+                       
                     </div>
                 </div>
             </div>
@@ -47,11 +47,13 @@ const NavItems = () => {
             <li><Link to='/blog'>Blog</Link></li>
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/contact'>Contact</Link></li>
+            <li><Link to='/login'>Login</Link></li>
+            <li><Link to='/signup'>SignUp</Link></li>
         </ul>
 
     </div>
     <Link to='/sign-up' className='lab-btn me-3 d-none d-md-block'>Create Account</Link>
-<Link to='/log In' className='d-none d-md-block'>Log In</Link>
+{/* <Link to='/log In' className='d-none d-md-block'>Log In</Link> */}
 <div onClick={()=>setMenuToggle(!menuToggle)} className={`header-bar d-lg-none ${menuToggle ? "active" : ""}`}>
     <span></span>
     <span></span>
