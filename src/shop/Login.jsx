@@ -78,7 +78,7 @@ login(email,password).then((result)=>{
 {/* account bottom */}
 <div className='account-bottom'>
 <span className='d-block cate pt-10'>
-Don't Have an Account? <Link to='/sign-up'>Sign Up</Link>
+Don't Have an Account? <Link to='/signup'>Sign Up</Link>
 </span>
 
 </div>
