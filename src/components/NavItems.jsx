@@ -24,7 +24,7 @@ const NavItems = () => {
             <div className={`header-top d-md-none ${socialToggle ? "open" : ""}`}>
                 <div className='container'>
                     <div className='header-top-area'>
-                        <Link to='/signup' className='lab-btn me-3'><span>Create Account</span></Link>
+                        {/* <Link to='/signup' className='lab-btn me-3'><span>Create Account</span></Link> */}
                        
                     </div>
                 </div>
@@ -52,7 +52,7 @@ const NavItems = () => {
         </ul>
 
     </div>
-    <Link to='/sign-up' className='lab-btn me-3 d-none d-md-block'>Create Account</Link>
+    {/* <Link to='/sign-up' className='lab-btn me-3 d-none d-md-block'>Create Account</Link> */}
 {/* <Link to='/log In' className='d-none d-md-block'>Log In</Link> */}
 <div onClick={()=>setMenuToggle(!menuToggle)} className={`header-bar d-lg-none ${menuToggle ? "active" : ""}`}>
     <span></span>

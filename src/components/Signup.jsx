@@ -6,39 +6,39 @@ const socialTitle = "Login with Social Media"
 const btnText = "Signup"
 const Signup = () => {
     const [errorMessage, seterrorMessage] = useState("")
-    const {signUpWithGmail,createUser}=useContext(AuthContext);
-    const location=useLocation()
-    const navigate=useNavigate();
-    const from=location.state?.from?.pathname || "/";
-    const handleRegister=()=>{
-        signUpWithGmail().then((result)=>{
-            const user=result.user;
-            navigate(from,{replace:true})
-        }).catch((error)=>{
-    const errorMsg=error.message;
-    seterrorMessage("Please provide valid email & password!")
-})
+    const { signUpWithGmail, createUser } = useContext(AuthContext);
+    const location = useLocation()
+    const navigate = useNavigate();
+    const from = location.state?.from?.pathname || "/";
+    const handleRegister = () => {
+        signUpWithGmail().then((result) => {
+            const user = result.user;
+            navigate(from, { replace: true })
+        }).catch((error) => {
+            const errorMsg = error.message;
+            seterrorMessage("Please provide valid email & password!")
+        })
     }
     const handleSignup = (event) => {
-event.preventDefault();
-const form=event.target;
-        const email=form.email.value;
-const password=form.password.value;
-const confirmPassword=form.confirmPassword.value;
-// console.log(email,password,confirmPassword)
-if(password!==confirmPassword){
-    seterrorMessage("Password doesn't match! Please, provide a correct password!")
-} else{
-    seterrorMessage("")
-    createUser(email,password).then((userCredential)=>{
-        const user=userCredential.user;
-        alert("Account created successfully done!!!")
-        navigate(from,{replace:true})
-    }).catch((error)=>{
-        console.log(error.message);
-        alert(`${error.message}`)
-    })
-}
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        const confirmPassword = form.confirmPassword.value;
+        // console.log(email,password,confirmPassword)
+        if (password !== confirmPassword) {
+            seterrorMessage("Password doesn't match! Please, provide a correct password!")
+        } else {
+            seterrorMessage("")
+            createUser(email, password).then((userCredential) => {
+                const user = userCredential.user;
+                alert("Account created successfully done!!!")
+                navigate(from, { replace: true })
+            }).catch((error) => {
+                console.log(error.message);
+                alert(`${error.message}`)
+            })
+        }
     }
     return (
         <div className='login-section padding-tb section-bg'>

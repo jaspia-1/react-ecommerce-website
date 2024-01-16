@@ -6,9 +6,13 @@ import ProductCards from './ProductCards';
 import Pagination from './Pagination';
 import Search from './Search';
 import ShopCategory from './ShopCategory';
+import PriceFilter from './PriceFilter';
 const Shop = () => {
+  
+
     const[GridList,setGridList]=useState(true)
     const [products,setproducts]=useState(Data)
+    const [filteredProducts, setFilteredProducts] = useState(products);
     // console.log(products)
     //pagination
     const[currentPage,setCurrentPage]=useState(1);
@@ -30,7 +34,7 @@ const Shop = () => {
             return newVal.category=== curcat;
         })
         setSelectedCategory(curcat)
-        setproducts(newItem)
+        setFilteredProducts(newItem);
     }
     return (
         <div>
@@ -54,7 +58,7 @@ const Shop = () => {
         </div>
     </div>
     <div>
-<ProductCards GridList={GridList} products={currentProducts}></ProductCards>
+<ProductCards GridList={GridList} products={filteredProducts}></ProductCards>
     </div>
     <Pagination
     productsPerPage={productsPerPage}
@@ -74,6 +78,7 @@ const Shop = () => {
     setProducts={setproducts}
 selectedCategory={selectedCategory}
 ></ShopCategory>
+<PriceFilter setFilteredProducts={setFilteredProducts} products={products}></PriceFilter>
 </aside>
 
         </div>
