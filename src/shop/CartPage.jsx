@@ -153,7 +153,7 @@ placeholder='Coupon code ....'/>
 </span>
 </div>
 <input type='text' name='postalCode' id='postalCode' placeholder='Postcode/ZIP' className='cart-page-input-text'/>
-<button>Update Address</button>
+{/* <button>Update Address</button> */}
 </div>
 </div>
 <div className='col-md-6 col-12'>

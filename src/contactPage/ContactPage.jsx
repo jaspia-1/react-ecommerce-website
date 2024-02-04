@@ -52,8 +52,9 @@ const ContactPage = () => {
 <h2 className='title'>{conTitle}</h2>
 </div>
 <div className='section-wrapper'>
-<form className='contact-form'>
+<form action="https://api.web3forms.com/submit" method="POST" className='contact-form'>
 <div className='form-group'>
+<input type="hidden" name="access_key" value="c8125b08-c786-45d1-a28c-84133556d344"/>
 <input type='text' name='name' id='name' placeholder='Your Name *'/>
 </div>
 <div className='form-group'>
@@ -80,5 +81,5 @@ const ContactPage = () => {
         </div>
     );
 };
-
+<script src="https://web3forms.com/client/script.js" async defer></script>
 export default ContactPage;
