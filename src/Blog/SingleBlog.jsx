@@ -57,10 +57,10 @@ const SingleBlog = () => {
                             </blockquote>
                             <p>Welcome to our shop latest blog post, your ultimate guide to staying stylish and up-to-date with the latest trends! Explore a curated collection of fashion-forward pieces, timeless classics, and innovative tech essentials. Dive into our in-depth product reviews and insightful articles that highlight the functionality, durability, and uniqueness of our offerings. Discover expert tips on mixing and matching outfits, upgrading your tech game, and accessorizing with finesse. Stay connected with our blog for exclusive sneak peeks, seasonal highlights, and practical advice to elevate your shopping experience. Join us as we navigate the world of fashion, lifestyle, and innovation together!</p>
 
-                            <img src='/src/assets/images/blog/single/01.jpg'/>
+                            <img src='/public/assets/images/blog/single/01.jpg'/>
                             <p>Embark on a style journey with our latest blog post, tailored exclusively for trendsetters and tech enthusiasts alike. Delve into a treasure trove of fashion-forward selections, ranging from chic apparel to cutting-edge gadgets that redefine modern living. Our blog unveils detailed insights and expert reviews, offering a comprehensive view of our curated products quality, functionality, and versatility. Uncover invaluable fashion tips, tech hacks, and accessory pairings that complement your lifestyle effortlessly. Engage with our vibrant community, stay informed about seasonal releases, and discover innovative ways to redefine your personal style. Join us as we unveil the perfect blend of sophistication, utility, and trendsetting allure in our shop blog!</p>
                             <div className='video-thumb'>
-                            <img src='/src/assets/images/blog/single/02.jpg' alt=''/>
+                            <img src='/public/assets/images/blog/single/02.jpg' alt=''/>
                             <a href="https://youtu.be/VsUzmlZfYNg?si=26mtmTfSXsKXkmnW"
                             className='video-button popup'
                             target='_blank'

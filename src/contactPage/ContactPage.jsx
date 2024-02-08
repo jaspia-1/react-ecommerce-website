@@ -3,7 +3,7 @@ import PageHeader from '../components/PageHeader';
 import GoogleMap from '../components/GoogleMap';
 const subTitle = "Get in touch with us"; const title = "We're Always Eager To Hear From You!"; const conSubTitle = "Get in touch with Contact us"; const conTitle = "Fill The Form Below So We Can Get To Know You And Your Needs Better."; const btnText = "Send our Message";
 
-const contactList = [ { imgUrl: "/src/assets/images/icon/01.png", imgAlt: "contact icon", title: "Office Address", desc: " 1201 Zindabazar", }, { imgUrl: "/src/assets/images/icon/02.png", imgAlt: "contact icon", title: "Phone number", desc: "01712356789,01912345678", }, { imgUrl: "/src/assets/images/icon/03.png", imgAlt: "contact icon", title: "Send email", desc: "admin@shopcart.com", }, { imgUrl: "/src/assets/images/icon/04.png", imgAlt: "contact icon", title: "Our website", desc: "www.shopcart.com", }, ];
+const contactList = [ { imgUrl: "/public/assets/images/icon/01.png", imgAlt: "contact icon", title: "Office Address", desc: " 1201 Zindabazar", }, { imgUrl: "/public/assets/images/icon/02.png", imgAlt: "contact icon", title: "Phone number", desc: "01712356789,01912345678", }, { imgUrl: "/public/assets/images/icon/03.png", imgAlt: "contact icon", title: "Send email", desc: "admin@shopcart.com", }, { imgUrl: "/public/assets/images/icon/04.png", imgAlt: "contact icon", title: "Our website", desc: "www.shopcart.com", }, ];
 
 
 const ContactPage = () => {

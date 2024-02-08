@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../assets/images/logo/logo.png"
+// import logo from "../../assets/images/logo/logo.png"
+import logo from "../../public/assets/images/logo/logo.png"
 import "./NavItems.css"
 import { AuthContext } from '../contexts/AuthProvider';
 const NavItems = () => {
