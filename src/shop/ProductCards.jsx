@@ -7,7 +7,7 @@ const ProductCards = ({ GridList, products }) => {
     return (
         <div className={`shop-product-wrap row justify-content-center ${GridList ? "grid" : "list"}`}>
             {
-            products.map((product, i) => (
+            products?.map((product, i) => (
                 <div key={i} className='col-lg-4 col-md-6 col-12'>
                     <div className='product-item'>
                         <div className='product-thumb'>
