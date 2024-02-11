@@ -6,7 +6,7 @@ const btnText = "Get Started Now";
 
 const categoryList = [
     {
-        imgUrl: 'https://ibb.co/ftJRCgp',
+        imgUrl: 'https://i.ibb.co/ftJRCgp/01.jpg',
         imgAlt: 'category rajibraj91 rajibraj',
         iconName: 'icofont-brand-windows',
         title: 'DSLR Camera',
