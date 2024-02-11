@@ -20,7 +20,7 @@ onChange={(e)=>setSearchTerm(e.target.value)}
             {/* showing search result*/}
             <div>
                 {
-                    searchTerm && filteredProducts.map((product)=>(
+                    searchTerm && filteredProducts?.map((product)=>(
                         <Link key={product.id} to={`/shop/${product.id}`}>
                             <div className='d-flex gap-3 p-2'>
 <div>

@@ -71,7 +71,7 @@ localStorage.setItem("cart",JSON.stringify(cart));
     {/* table body*/}
     <tbody>
         {
-            cartItems.map((item,indx)=>(
+            cartItems?.map((item,indx)=>(
                 <tr key={indx}>
 <td className='product-item cat-product'>
 <div className='p-thumb'>

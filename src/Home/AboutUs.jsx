@@ -32,7 +32,7 @@ const AboutUs = () => {
 <div className='row g-4 justify-content-center align-items-center row-cols-1 row-cols-md-2 row-cols-xl-3'>
 <div className='col'>
 {
-    countList.map((val,i)=>(
+    countList?.map((val,i)=>(
         <div key={i} className='count-item'>
             <div className='count-inner'>
                 <div className='count-icon'>

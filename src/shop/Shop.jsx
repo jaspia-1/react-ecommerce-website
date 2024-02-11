@@ -27,7 +27,7 @@ const Shop = () => {
     };
     //filter products based on category
     const [selectedCategory,setSelectedCategory]=useState("All");
-    const menuItems=[...new Set(Data.map((Val)=>Val.category))];
+    const menuItems=[...new Set(Data?.map((Val)=>Val.category))];
 
     const filterItem=(curcat)=>{
         const newItem=Data.filter((newVal)=>{

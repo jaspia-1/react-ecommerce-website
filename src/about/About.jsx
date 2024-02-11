@@ -37,7 +37,7 @@ const About = () => {
 <div className='section-wrapper'>
 <ul className="lab-ul">
 {
-    aboutList.map((val,i)=>(
+    aboutList?.map((val,i)=>(
         <li key={i}>
 <div className='sr-left'>
 <img src={val.imgUrl} alt=''/>

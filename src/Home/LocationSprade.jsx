@@ -52,7 +52,7 @@ const LocationSprade=()=>{
 <div className='section-wrapper'>
 <div className='clients'>
 {
-    clientsList.map((val,i)=>(
+    clientsList?.map((val,i)=>(
         <div key={i} className='client-list'>
             <Link to="./" className='client-content'>
                 <span>{val.text}</span>

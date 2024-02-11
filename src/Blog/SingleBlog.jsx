@@ -25,7 +25,7 @@ const SingleBlog = () => {
 <div className='post-item style-2'>
 <div className="post-inner">
     {
-        result.map((item)=>(
+        result?.map((item)=>(
             <div key={item.id}>
                 <div className='post-thumb'>
                     <img 
@@ -83,7 +83,7 @@ const SingleBlog = () => {
                                 </ul>
                                 <ul className='lab-ul social-icons'>
 {
- socialList.map((val,i)=>(
+ socialList?.map((val,i)=>(
     <li key={i}>
 <a href ="#" className={val.className}
 >

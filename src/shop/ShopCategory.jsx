@@ -10,7 +10,7 @@ const ShopCategory = ({filterItem, setItem,menuItems,setProducts,selectedCategor
         <button onClick={()=> setProducts(Data)} 
         className={`m-2 ${selectedCategory ==="All" ? "bg-warning":""}`}>All</button>
         {
-            menuItems.map((Val,id)=>{
+            menuItems?.map((Val,id)=>{
                 return(
                     <button 
                     className={`m-2 ${selectedCategory === Val ? "bg-warning":""}`}

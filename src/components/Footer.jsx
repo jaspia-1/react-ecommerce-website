@@ -35,7 +35,7 @@ const Footer = () => {
             <p>{desc}</p>
             <ul className='lab-ul office-address'>
 {
-    addressList.map((val,i)=>(
+    addressList?.map((val,i)=>(
         <li key={i}>
 <i className={val.iconName}>{val.text}</i>
         </li>
@@ -44,7 +44,7 @@ const Footer = () => {
             </ul>
             <ul className='lab-ul social-icons'>
 {
-    socialList.map((val,i)=>(
+    socialList?.map((val,i)=>(
         <li key={i}>
 <a href='#' className={val.className}><i className={val.iconName}>{val.text}</i></a>
         </li>
@@ -66,7 +66,7 @@ const Footer = () => {
         <div className="content">
             <ul className='lab-ul office-address'>
 {
-    ItemList.map((val,i)=>(
+    ItemList?.map((val,i)=>(
         <li key={i}>
 <a href="#">{val.text}</a>
         </li>
@@ -89,7 +89,7 @@ const Footer = () => {
         <div className="content">
             <ul className='lab-ul office-address'>
 {
-    quickList.map((val,i)=>(
+    quickList?.map((val,i)=>(
         <li key={i}>
 <a href="#">{val.text}</a>
 
@@ -115,7 +115,7 @@ const Footer = () => {
         <div className="content">
             <ul className='lab-ul office-address'>
 {
-    tweetList.map((val,i)=>(
+    tweetList?.map((val,i)=>(
         <li key={i}>
 <i className={val.iconName}></i>
 {val.desc}
@@ -138,7 +138,7 @@ const Footer = () => {
 <p>&copy; 2023 <Link to="/">Shop Cart</Link> Designed by <a href ="/" target='_blank'>Aspia & Bithi</a></p>
 <div className='footer-bottom-list'>
 {
-    footerbottomList.map((val,i)=>(
+    footerbottomList?.map((val,i)=>(
 <a href='#' key={i}>{val.text}</a>
     ))
 }

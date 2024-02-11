@@ -17,7 +17,7 @@ const Review = () => {
 <div className='review-showing'>
 <ul className='content lab-ul'>
 {
-    ReviewList.map((review,i)=>(
+    ReviewList?.map((review,i)=>(
         <li key={i}> 
 <div className='post-thumb'>
     <img src={review.imgUrl} alt=''/>

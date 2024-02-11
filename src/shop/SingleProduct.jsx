@@ -50,7 +50,7 @@ navigation={
 className="mySwiper">
        
         {
-            result.map((item,i)=>(
+            result?.map((item,i)=>(
                 <SwiperSlide key={i}>
 <div className='single-thumb'>
 <img src={item.img} alt=''/>
@@ -72,7 +72,7 @@ className="mySwiper">
     <div className='post-content'>
 <div>
     {
-        result.map(item=><ProductDisplay key={item.id} item={item}></ProductDisplay>)
+        result?.map(item=><ProductDisplay key={item.id} item={item}></ProductDisplay>)
     }
 </div>
     </div>

@@ -23,7 +23,7 @@ const ContactPage = () => {
 <div className='col-xl-4 col-lg-5 col-12'>
 <div className='contact-wrapper'>
 {
-   contactList.map((val,i)=>(
+   contactList?.map((val,i)=>(
     <div key={i} className='contact-item'>
         <div className='contact-thumb'>
             <img src={val.imgUrl} alt=''/>
