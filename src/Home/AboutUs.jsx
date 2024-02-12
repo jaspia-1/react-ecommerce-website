@@ -62,7 +62,10 @@ const AboutUs = () => {
                 </div>
                 <div className='col'>
 <div className='instructor-thumb'>
-<img src="/public/assets/images/instructor/01.png" alt=""/>
+<img src="https://i.ibb.co/0VfbGTH/01.png" 
+alt=""
+
+/>
 </div>
                 </div>
 
