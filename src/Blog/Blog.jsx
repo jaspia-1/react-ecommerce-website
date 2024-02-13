@@ -16,7 +16,11 @@ const Blog = () => {
             <div className='post-item'>
                 <div className='post-inner'>
                     <div className='post-thumb'>
-                        <Link to={`/blog/${blog.id}`}><img src={blog.imgUrl} alt=''/></Link>
+                        <Link to={`/blog/${blog.id}`}><img src={blog.imgUrl} 
+                        alt=''
+                        style={{ width: '315px', height: '200px' }}
+                        /
+                        ></Link>
                         </div> 
                         <div className='post-content'>
                             <Link to={`/blog/${blog.id}`}><h4>{blog.title}</h4></Link>
