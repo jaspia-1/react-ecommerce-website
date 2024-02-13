@@ -1,6 +1,6 @@
 const blogList = [
     {   id: 1,
-        imgUrl: '/public/assets/images/blog/01.jpg',
+        imgUrl: 'https://i.ibb.co/WBtghCz/01.jpg',
         imgAlt: 'Blog Thumb',
         title: 'Business Ueporting Rouncil Them Could Plan.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',

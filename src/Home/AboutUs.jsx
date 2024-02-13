@@ -64,7 +64,7 @@ const AboutUs = () => {
 <div className='instructor-thumb'>
 <img src="https://i.ibb.co/0VfbGTH/01.png" 
 alt=""
-
+style={{ width: '400px', height: '300px' }} 
 />
 </div>
                 </div>
