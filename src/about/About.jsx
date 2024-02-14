@@ -4,7 +4,7 @@ const subTitle = "About Our Brand"; const title = "Good Qualification Services A
 
 const year = "30+"; const expareance = "Years Of Experiences";
 
-const aboutList = [ { imgUrl: '/public/assets/images/about/icon/01.jpg', imgAlt: 'about icon rajibraj91 rajibraj', title: 'Skilled Instructors', desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services', }, { imgUrl: '/public/assets/images/about/icon/02.jpg', imgAlt: 'about icon rajibraj91 rajibraj', title: 'Get Certificate', desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services', }, { imgUrl: '/public/assets/images/about/icon/03.jpg', imgAlt: 'about icon rajibraj91 rajibraj', title: 'Online Classes', desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services', }, ]
+const aboutList = [ { imgUrl: 'https://i.ibb.co/chGBVBc/01.jpg', imgAlt: 'about icon rajibraj91 rajibraj', title: 'Skilled Instructors', desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services', }, { imgUrl: 'https://i.ibb.co/25HyqNK/02.jpg', imgAlt: 'about icon rajibraj91 rajibraj', title: 'Get Certificate', desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services', }, { imgUrl: 'https://i.ibb.co/209PD54/03.jpg', imgAlt: 'about icon rajibraj91 rajibraj', title: 'Online Classes', desc: 'Distinctively provide acces mutfuncto users whereas communicate leveraged services', }, ]
 const About = () => {
     return (
         <div>
@@ -21,7 +21,9 @@ style={{ width: '480px', height: 'auto' }}
 />
 </div>
 <div className='abs-thumb'>
-<img src='/public/assets/images/about/02.jpg'/>
+<img src='https://i.ibb.co/H73K6L3/02.jpg'
+style={{ width: '315px', height: '310px' }}
+/>
 </div>
 <div className='about-left-corner'>
 <h3>{year}</h3>
