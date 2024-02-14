@@ -92,9 +92,9 @@ setItems(updateItems)
         <div className='course-section style-3 padding-tb'>
         
             <div className='course-shape one'>
-                <img src='/public/assets/images/shape-img/icon/01.png' alt='' /></div>
+                <img src='https://i.ibb.co/WzPqPMB/01.png' alt='' /></div>
             <div className='course-shape two'>
-                <img src='/public/assets/images/shape-img/icon/02.png' alt='' /></div>
+                <img src='https://i.ibb.co/mT1KX8B/02.png' alt='' /></div>
                 <div className='container'>
 <div className='section-header'>
 <h2 className='title'>{title}</h2>
