@@ -15,7 +15,10 @@ const About = () => {
 <div className='col'>
 <div className='about-left'>
 <div className='about-thumb'>
-<img src='/public/assets/images/about/01.jpg' alt=''/>
+<img src='https://i.ibb.co/kgZRqz8/01.jpg' 
+alt=''
+style={{ width: '480px', height: 'auto' }}
+/>
 </div>
 <div className='abs-thumb'>
 <img src='/public/assets/images/about/02.jpg'/>
